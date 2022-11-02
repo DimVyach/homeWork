@@ -117,9 +117,17 @@
   //alert(`${a} * ${b} = ${a * b}`);
   //alert(`${a} / ${b} = ${a / b}`);
 
-time = +prompt("What time is it?");
-seconds = time * 3600;
-alert(`It\`s ${seconds} seconds`); 
+//time = +prompt("What time is it?");
+//seconds = time * 3600;
+//alert(`It\`s ${seconds} seconds`);
+
+             // Home_Work 3
+//firstNumber = +prompt("Please enter first number!");
+//secondNumber = +prompt("Please enter second number!");
+//thirdNumber = +prompt("Please enter third number!");
+//sum = firstNumber + secondNumber + thirdNumber;
+//arithmeticMean =sum / 3;
+//alert(arithmeticMean);
 
 
 
