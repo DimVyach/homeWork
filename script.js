@@ -129,6 +129,12 @@
 //arithmeticMean =sum / 3;
 //alert(arithmeticMean);
 
-
-
+             //Home_Work Test
+question1 = prompt("How much will 2+3?");
+question2 = prompt("");
+question3 = prompt("");
+question4 = prompt("");
+question5 = prompt("");
+question6 = prompt("");
+question7 = prompt("");
 
