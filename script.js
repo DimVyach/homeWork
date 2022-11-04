@@ -121,7 +121,22 @@
 //seconds = time * 3600;
 //alert(`It\`s ${seconds} seconds`);
 
-             // Home_Work 3
+//email = prompt("Please add your e-mail?").replaceAll(" ","");
+//if (!email) {
+  //  console.log("Email can't be empty?");
+//} else if(email.length < 6) {
+  //  console.log("Email must be have more than 5 simbols!");
+//} else if (email.indexOf("@") === -1) {
+  //  console.log("Email need @");
+//} else if (email.indexOf("@")===0) {
+  //  console.log("@ can't be like first letter");
+//} else if(email.indexOf("@")===email.length -1) {
+  //  console.log("@ can't be like last letter");
+//} else {
+  //  document.write(`Your email is ${email}`);
+//}
+
+             // Home_Work 4
 //firstNumber = +prompt("Please enter first number!");
 //secondNumber = +prompt("Please enter second number!");
 //thirdNumber = +prompt("Please enter third number!");
@@ -129,12 +144,108 @@
 //arithmeticMean =sum / 3;
 //alert(arithmeticMean);
 
-             //Home_Work Test
-question1 = prompt("How much will 2+3?");
-question2 = prompt("");
-question3 = prompt("");
-question4 = prompt("");
-question5 = prompt("");
-question6 = prompt("");
-question7 = prompt("");
 
+// englishColor = prompt("Enter rgb English color?");
+
+// if(englishColor.toLowerCase() === "red") {
+//     console.log("Червоний");
+// } else if(englishColor.toLowerCase() === "blue") {
+//     console.log("Блакитний");
+// } else if(englishColor.toLowerCase() === "green") {
+//     console.log("Зелений");
+// } else {
+//     console.log("Такого кольору не існує!");
+// }
+
+
+// switch...case
+//englishColor = prompt("Enter rgb English color?");
+
+//switch(englishColor.toLowerCase()) {
+  //  case "red":
+    //    console.log("Червоний");
+      //  break;
+    //case "blue":
+      //  console.log("Блакитний");
+        //break;
+    //case "green":
+      //  console.log("Зелений");
+        //break;
+    //default:
+      //  console.log("Такого кольору не існує!");
+//}
+
+//let numOrStr = prompt('input number or string');
+//console.log(numOrStr)
+
+//if(numOrStr === null) {
+  //console.log('ви скасували')
+//} else if( numOrStr.trim() === '' ) {
+  //console.log('Empty String');
+//} else if ( isNaN( +numOrStr ) ) {
+  //console.log(' number is Ba_NaN')
+//} else {
+  //console.log('OK!')
+//}
+
+//let numOrStr = prompt('input number or string');
+  //switch(numOrStr) {
+    //  case (null):
+      //    console.log('ви скасували');
+        //  break;
+      //case ("").trim():
+        //  console.log('Empty String');
+          //break;
+      //case !isNaN( numOrStr ) || numOrStr:
+        //  console.log( 'number is Ba_NaN');
+          //break;
+      //default:
+        //  console.log('OK!');
+  //}
+
+             //Home_Work 6 Test
+
+
+
+    question1 = +prompt("How much will 2 + 3?");
+    question2 = prompt("Is the ball round? (yes/no)");
+    question3 = +prompt("How many weeks in a month?");
+    question4 = prompt("What color is the sky?");
+    question5 = prompt("What color is our teacher hair?");
+    question6 = +prompt("How many fingers are on the hand?");
+    question7 = +prompt("How much will 10 / 5?");
+
+   if (question1,question2,question3,question4,question5,question6,question7 === null) {
+    console.log("0");
+  }
+    if ( question1 === 5) {
+        console.log(10);
+    } else
+        console.log(0)
+    if (question2 === "yes") {
+        console.log(10);
+    } else
+        console.log(0);
+    if (question3 === 4) {
+        console.log(10);
+    } else
+        console.log(0);
+    if (question4 === "blue") {
+        console.log(10);
+    } else
+        console.log(0);
+    if (question5 === "red" ) {
+        console.log(10);
+    } else
+        console.log(0);
+    if (question6 === 5) {
+        console.log(10);
+    } else
+        console.log(0);
+    if (question7 === 2) {
+        console.log(10);
+    } else
+        console.log(0);
+
+    sum = ( question1 +  question2 +  question3 +  question4 +  question5 +  question6 +  question7);
+    alert(sum);
