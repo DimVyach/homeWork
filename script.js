@@ -190,24 +190,24 @@
 
 //let numOrStr = prompt('input number or string');
   //switch(numOrStr) {
-    //  case (null):
-      //    console.log('ви скасували');
-        //  break;
-      //case ("").trim():
-        //  console.log('Empty String');
-          //break;
-      //case !isNaN( numOrStr ) || numOrStr:
-        //  console.log( 'number is Ba_NaN');
-          //break;
-      //default:
-        //  console.log('OK!');
+   //   case (null):
+     //     console.log('ви скасували');
+      //    break;
+     // case (' ').trim():
+     //     console.log('Empty String');
+     //     break;
+     // case !isNaN( numOrStr ) || numOrStr:
+     //     console.log( 'number is Ba_NaN');
+     //     break;
+     // default:
+      //    console.log('OK!');
   //}
 
              //Home_Work 6 Test
 
 
 
-    question1 = +prompt("How much will 2 + 3?");
+/*    question1 = +prompt("How much will 2 + 3?");
     question2 = prompt("Is the ball round? (yes/no)");
     question3 = +prompt("How many weeks in a month?");
     question4 = prompt("What color is the sky?");
@@ -215,37 +215,185 @@
     question6 = +prompt("How many fingers are on the hand?");
     question7 = +prompt("How much will 10 / 5?");
 
-   if (question1,question2,question3,question4,question5,question6,question7 === null) {
-    console.log("0");
-  }
-    if ( question1 === 5) {
-        console.log(10);
-    } else
-        console.log(0)
-    if (question2 === "yes") {
-        console.log(10);
-    } else
-        console.log(0);
-    if (question3 === 4) {
-        console.log(10);
-    } else
-        console.log(0);
-    if (question4 === "blue") {
-        console.log(10);
-    } else
-        console.log(0);
-    if (question5 === "red" ) {
-        console.log(10);
-    } else
-        console.log(0);
-    if (question6 === 5) {
-        console.log(10);
-    } else
-        console.log(0);
-    if (question7 === 2) {
-        console.log(10);
-    } else
-        console.log(0);
+   points = 0;
+   correct = 0;
 
-    sum = ( question1 +  question2 +  question3 +  question4 +  question5 +  question6 +  question7);
-    alert(sum);
+if(+question1 === 5) {
+    points += 10;
+    correct += 1;
+}
+if(question2?.toLowerCase() === "yes") {
+    points += 10;
+    correct += 1;
+}
+if(+question3 === 4) {
+    points += 10;
+    correct += 1;
+}
+if(question4?.toLowerCase() === "blue") {
+    points += 10;
+    correct += 1;
+}
+if(question5?.toLowerCase() === "red") {
+    points += 10;
+    correct += 1;
+}
+if(+question6 === 5) {
+    points += 10;
+    correct += 1;
+}
+if(+question7 === 2) {
+    points += 10;
+    correct += 1;
+
+    document.write(`You have ${points} points. You answered correctly for ${correct}/7`);*/
+//}
+//if(question3?.toLowerCase() === "nan" || thiQuestion?.toLowerCase() === "can't delay on 0") {
+  //  points += 10;
+    //correct += 1;
+//}
+
+//document.write(`You have ${points} points. You answered correctly for ${correct}/7`);
+ //How much will 2+2?
+ //The sun rises in the east?
+ //How much will 5 / 0 be?
+ //What color is the sky?
+ //What is the correct answer to the ultimate question of life, the universe and all that. (42)
+ //firstQuestion = prompt("How much will 2+2?");
+// secQuestion = prompt("The sun rises in the east?");
+// thiQuestion = prompt("How much will 5 / 0 be?");
+
+ //points = 0;
+ //correct = 0;
+
+ //if(+firstQuestion === 4) {
+//     points += 10;
+ //    correct += 1;
+ //}
+ //if(secQuestion?.toLowerCase() === "yes") {
+ //    points += 10;
+   //  correct += 1;
+ //}
+ //if(thiQuestion?.toLowerCase() === "nan" || thiQuestion?.toLowerCase() === "can't delay on 0") {
+ //    points += 10;
+ //    correct += 1;
+ //}
+
+ //document.write(`You have ${points} points. You answered correctly for ${correct}/3`);
+
+
+         //DZ_7
+     // answer = prompt("What do you want to do: + , - , / , * ?");
+       //do {
+        //answer = prompt("What do you want to do: + , - , / , * ?");
+         //if (answer !== "+" || "-" || "/" || "*") {
+           //  alert("Answer is wrong!Try again");
+         //}while (answer !== "+" || "-" || "/" || "*");
+      //}
+
+
+
+ // function sumFactorials (`${firstValue}, ${secValue}`) {
+      //let sum = 0;
+      //for (let i = 1; i <= ; i += step) {
+         // let factorial = 1;
+         // for (let j = 2; j <= i; j++) {
+         //     factorial *= j;
+         // }
+         // sum += factorial;
+     // }
+    //  return sum;
+//}
+//sumFactorials();
+
+                                       // DZ_8
+
+   //  let a = parseInt( prompt("Enter first number?"));
+     // let b = parseInt( prompt("Enter second number?Must be > first number"));
+
+          //  if (a >= b){
+          //      b = parseInt( prompt("Enter second number?Must be > first number"));
+          //  } else {
+          //      alert(("It's right!!!"))
+          //  }
+             //(b !== a) ;
+
+
+
+
+/*
+let operators = ["+", "-", "*", "/"],
+    count = 0,
+    total = 0;
+while (!operators.includes(operation = prompt(`Enter operation (+, -, * or /)`)));
+
+do {
+    str = prompt(`How many operands do you want? (> 1 but < 7)`);
+    count = +str;
+} while (count !== parseInt(str) || count < 2 || count > 6);
+
+let x = [];
+for (let i = 1; i <= count; i++) {
+    do {
+        str = prompt(`Enter ${i} number`);
+        operand = +str;
+    } while (operand !== parseFloat(str) || !Number.isFinite(operand));
+    x.push(operand);
+}
+
+total = x[0];
+for (let i = 1; i < count; i++) {
+    switch (operation) {
+        case "+":
+            total += x[i];
+            break;
+        case "-":
+            total -= x[i];
+            break;
+        case "*":
+            total *= x[i];
+            break;
+        case "/":
+            total /= x[i];
+            break;
+    }
+}
+console.log(total);
+*/
+
+
+//let firNumber = parseInt( prompt("Enter first number?"));
+//let secNumber = parseInt( prompt("Enter second number?Must be > first number"));
+
+
+//  do {
+//     firNumber = parseInt( prompt("Enter first number?"));
+// } while (isNaN(firNumber) || firNumber < 1 || secNumber < firNumber) {
+//     firNumber =
+// }
+
+//function factorial(num) {
+// let result = 1;
+// for (result; num > 1; num--) {
+//     console.log();
+//     result = result * num;
+//     console.log(result);
+// }
+
+// }
+// factorial(a);
+
+
+function sumFactorials(start, finish, step) {
+    let sum = 0;
+    let factorial = 1;
+    for (let i = start; i <= finish; i += step) {
+
+        for (let j = 1; j <= i; j++) {
+            factorial = factorial * j;
+
+        }
+    }
+}
+
+sumFactorials(1, 5, 3);

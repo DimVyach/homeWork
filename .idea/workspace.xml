@@ -55,6 +55,10 @@
       <workItem from="1667494000665" duration="9598000" />
       <workItem from="1667513366937" duration="569000" />
       <workItem from="1667580405165" duration="13968000" />
+      <workItem from="1667598758639" duration="163000" />
+      <workItem from="1667629213441" duration="649000" />
+      <workItem from="1667664505882" duration="3588000" />
+      <workItem from="1667737064909" duration="12886000" />
     </task>
     <task id="LOCAL-00001" summary="test_1">
       <created>1667337787179</created>
@@ -133,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667494022610</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="HomeW_6">
+      <created>1667598812510</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667598812510</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +156,7 @@
     <MESSAGE value="test_2" />
     <MESSAGE value="test_3" />
     <MESSAGE value="Home_Work3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home_Work3" />
+    <MESSAGE value="HomeW_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeW_6" />
   </component>
 </project>
