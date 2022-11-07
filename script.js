@@ -322,8 +322,8 @@ if(+question7 === 2) {
 
 
 /*
-let operators = ["+", "-", "*", "/"],
-    count = 0,
+let operators = ["+", "-", "*", "/"];
+    count = 0;
     total = 0;
 while (!operators.includes(operation = prompt(`Enter operation (+, -, * or /)`)));
 
@@ -384,16 +384,52 @@ console.log(total);
 // factorial(a);
 
 
-function sumFactorials(start, finish, step) {
-    let sum = 0;
-    let factorial = 1;
-    for (let i = start; i <= finish; i += step) {
+//function sumFactorials(start, finish, step) {
+  //  let sum = 0;
+    //let factorial = 1;
+    //for (let i = start; i <= finish; i += step) {
 
-        for (let j = 1; j <= i; j++) {
-            factorial = factorial * j;
+      //  for (let j = 1; j <= i; j++) {
+        //    factorial = factorial * j;
 
-        }
+        //}
+    //}
+//}
+
+//sumFactorials(1, 5, 3);
+
+
+                           //CALCULATOR
+do{
+    operation = prompt("Выберите операцию (+ - / *)")
+} while(operation !== "+" && operation !== "-" && operation !== "/" && operation !== "*" );
+
+do{
+    countOfOperands = parseInt(prompt("Сколько чисел Вы хотите использовать?").replaceAll(" ", ""));
+} while(countOfOperands >= 7 || countOfOperands <= 1 || isNaN(countOfOperands));
+
+
+result = 0;
+for(i = 1; i <= countOfOperands; i++){
+    do {
+        number = parseInt(prompt(`Введите число ${i}`).replaceAll(" ", ""));
+    } while(isNaN(number))
+
+    switch(operation) {
+        case "+":
+            result += number;
+            break;
+        case "-":
+            result = i === 1 ? number : result - number;
+            break;
+        case "*":
+            if(i === 1) result = 1;
+            result *= number;
+            break;
+        case "/":
+            result = i === 1 ? number : result / number;
+            break;
     }
 }
 
-sumFactorials(1, 5, 3);
+alert(result);
