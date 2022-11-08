@@ -400,6 +400,7 @@ console.log(total);
 
 
                            //CALCULATOR
+/*
 do{
     operation = prompt("Выберите операцию (+ - / *)")
 } while(operation !== "+" && operation !== "-" && operation !== "/" && operation !== "*" );
@@ -432,4 +433,14 @@ for(i = 1; i <= countOfOperands; i++){
     }
 }
 
-alert(result);
+alert(result);*/
+         let sum = 0;
+                 for (a = 1; a <=5; a++) {
+                     factorial = 1;
+                     for (b = 1; b <= a; b++)
+                         factorial *= b;
+                     sum += factorial;
+
+                     console.log(factorial);
+                 }
+         console.log(`Сумма факториалов равна ${sum}`) ;
