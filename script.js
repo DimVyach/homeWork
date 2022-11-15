@@ -434,13 +434,162 @@ for(i = 1; i <= countOfOperands; i++){
 }
 
 alert(result);*/
-         let sum = 0;
-                 for (a = 1; a <=5; a++) {
-                     factorial = 1;
-                     for (b = 1; b <= a; b++)
-                         factorial *= b;
-                     sum += factorial;
 
-                     console.log(factorial);
-                 }
-         console.log(`Сумма факториалов равна ${sum}`) ;
+                               //DZ_8 SUM FACTORIALS
+
+/*
+let a = parseInt( prompt("Enter first number?"));
+ let b = parseInt( prompt("Enter second number?Must be > first number"));
+
+  if (a >= b){
+      b = parseInt( prompt("Enter second number?Must be > first number"));
+  } else {
+      alert(("It's right!!!"))
+  }
+
+let sum = 0;
+for (a = 1; a <= 5; a++) {
+    factorial = 1;
+    for (b = 1; b <= a; b++)
+        factorial *= b;
+        sum += factorial;
+
+    console.log(factorial);
+}
+console.log(`Сумма факториалов равна ${sum}`);*/
+
+
+                                      //DZ_10
+
+//let winOrSum = prompt("Winter or summer period?")
+
+//for(let chipCounted = 0;chipCounted < 10;chipCounted ++) {
+ //      console.log("Посчитано овец:" +chipCounted +"!");
+//}
+  //     console.log("Ураааа!");
+
+//let animals = ["лев","фламинго","белый медведь","удав"];
+  //  for (let i = 0; i < animals.length; i++) {
+    //    console.log("В этом зоопарке есть " + animals[i] + "!")
+    //}
+
+    // let timesToSayHello = 4;
+     //for (let i = 0; i < timesToSayHello; i++) {
+       //  console.log("Привет!");
+     //}
+
+        let  name = "Hik";
+        for (let i = 0; i < name.length; i++) {
+            console.log("B моем имени есть буква " +name[i] +".");
+}
+
+
+
+// СОРТИРОВКА МАССИВА ПО ВОЗРАСТАНИЮ
+/*let count = 0;
+ let arr = [3,5,1,4,2];
+   for (let j = 0; j < arr.length; j ++) {
+       for (let i = 0; i < arr.length - 1; i++) {
+           // console.log(arr[i]);
+
+           let a = arr[i],
+               b = arr[i + 1];
+           // console.log(a, b);
+           if (a > b) {                 //< ПО УБЫВАНИЮ
+               //меняем местами
+               let temp = a
+               a = b
+               b = temp
+           }
+           arr[i] = a;
+           arr[i + 1] = b;
+           count ++;
+       }
+       console.log(arr);
+   }
+   console.log(count);*/
+
+                                     //DZ_9
+
+do{
+    arr = parseInt(prompt("Enter numbers!").replaceAll(" ", ""))
+} while(isNaN(arr));
+console.log(arr);
+
+for (let j = 0; j < arr.length; j ++) {
+    for (let i = 0; i < arr.length - 1; i++) {
+
+        let a = arr[i],
+            b = arr[i + 1];
+        // console.log(a, b);
+        if (a > b) {
+            //меняем местами
+            let temp = a
+            a = b
+            b = temp
+        }
+        arr[i] = a;
+        arr[i + 1] = b;
+    }
+    console.log(arr);
+}
+
+//let c = arr.slice(2,5);
+//console.log(arr);
+//console.log(c);
+
+//shift()
+// метод массива который удаляет первый индекс массива и переиндексирует массив
+//при повторном вводе метода shift() опять удаляет первый индекс массива
+//возвращает новую длину массива
+
+/*let a = [3,4,5];
+let b = a.shift();
+console.log(b);
+console.log(a);
+b = a.shift();
+console.log(a);
+b = a.shift();
+console.log(a);*/
+
+//unshift()
+// метод unshift() добавляет элемент в начало массива.переиндексирует массив
+//unshift() возвращает новую длину массива
+
+/*let a = [3,4,5];
+let b = a.shift();
+console.log(b);
+console.log(a);
+let c = a.unshift(22);
+console.log(a);
+console.log(c);*/
+
+//slice()
+//метод slice() создает новый массив из начального(начальный массив не изменяя). копировать в новый массив
+//начинает с указанной в параметре в аргументе позиции.включительно с этой позиции.
+//если slice() имеет два параметра то он копирует от указанной позиции включительно до указанной позиции
+//не включительно.Применяется ели необходимо на основе исходного массива (не изменяя исходный массив)
+// нужно применить последовательно несколько элементов-можно применить метод  slice().копирует от первого индекса
+//включительно до второго не включительно.slice() можно применять к строке!
+
+/*let d = [22,33,44,55,66,77,88,99];
+let f = d.slice(3,5);
+console.log(d);
+console.log(f);   // [55,66,77,88,99]; с третьего элемента и дальше вывел новый массив
+
+
+let e = "hello";
+console.log(e.slice(1,4)) //ell*/
+
+
+
+
+
+
+
+
+
+
+
+
+
