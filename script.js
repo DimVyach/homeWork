@@ -1,4 +1,5 @@
-//namePerson = prompt("Kak тебя зовут?"); 
+
+//namePerson = prompt("Kak тебя зовут?");
 //alert("Hello" + " " + namePerson  + "! " + "How are you?");
  //console.log("how much");
 
@@ -478,10 +479,10 @@ console.log(`Сумма факториалов равна ${sum}`);*/
        //  console.log("Привет!");
      //}
 
-        let  name = "Hik";
-        for (let i = 0; i < name.length; i++) {
-            console.log("B моем имени есть буква " +name[i] +".");
-}
+      //  let  name = "Hik";
+    //    for (let i = 0; i < name.length; i++) {
+  //          console.log("B моем имени есть буква " +name[i] +".");
+//}
 
 
 
@@ -511,6 +512,7 @@ console.log(`Сумма факториалов равна ${sum}`);*/
 
                                      //DZ_9
 
+/*
 do{
     arr = parseInt(prompt("Enter numbers!").replaceAll(" ", ""))
 } while(isNaN(arr));
@@ -532,7 +534,8 @@ for (let j = 0; j < arr.length; j ++) {
         arr[i + 1] = b;
     }
     console.log(arr);
-}
+*/
+//}
 
 //let c = arr.slice(2,5);
 //console.log(arr);
@@ -582,13 +585,58 @@ let e = "hello";
 console.log(e.slice(1,4)) //ell*/
 
 
+                            //DZ_10
+vegetablesList = ['cabbage', 'avocado', 'tomato'];
+fruitsList = ['grapes', 'raspberry' ,'çoconut'];
+vegetablesPrice = [8,30,10];
+fruitsPrice = [20,25,50];
+    finalSum = 0;
+do {
+    period = prompt('Enter period: winter or summer').replaceAll(" ","").toLowerCase();
+} while (period !== "winter" && period !== "summer");
+    if (period === "winter") {
+        coefficiient = 2;
+    } else {
+        coefficiient = 0.8;
+    }
+do {
+    category = prompt("Choose category in which you want to buy products : vegetables or fruits").replaceAll(" ","").toLowerCase();
+} while (category !== "vegetables" && category !== "fruits");
 
+if (category === "vegetables") {
+    do {
+        product = prompt("Choose product from category vegetables : cabbage,avocado,tomato").replaceAll(" ","").toLowerCase();
+        vegetablesType = vegetablesList.indexOf(product);
+        priceOfProduct = vegetablesPrice[vegetablesType];
+    } while (product !== "cabbage" && product !== "avocado" && product !=="tomato" );
+} else {
+    do {
+        product = prompt("Choose category fruits: grapes,raspberry,coconut").replaceAll(" ","").toLowerCase();
+        fruitsType = fruitsList.indexOf(product);
+        priceOfProduct = fruitsPrice[fruitsType];
+    } while (product !== "grapes" && product !== "raspberry" && product !=="coconut");
+}
+do {
+    countOfProduct = parseInt(prompt(`Enter count of ${product}` ).replaceAll(" ",""));
+} while (isNaN(countOfProduct) || countOfProduct <= 1);
 
+finalSum = countOfProduct * coefficiient * priceOfProduct;
 
+if (category === "vegetables") {
+    productImg = `<img src = "images/vegetables/${product}.svg" alt = "${product}" width = "100" height = "100"></img>`;
+} else {
+    productImg = `<img src = "images/fruits/${product}.svg" alt = "${product}" width = "100" height = "100"></img>`;
+}
 
-
-
-
+  document.write(`
+      <div class = "product" align = "center">
+      ${productImg}
+      <p>Selected product:<b>${product}</b></p>
+      <p>Count of${product}:<b>${countOfProduct}</b></p>
+      <p>Selected period:<b>${period}</b></p>
+      <p>Final sum:<b>${finalSum} UAH</b></p>
+      </div>
+  `);
 
 
 
