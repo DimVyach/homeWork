@@ -107,28 +107,131 @@ console.log(array);
                                        //DZ_11
 
 
-hero = ['Ivan'];
-native = ['York','Of'];
-destination = ['Poltava','In'];
-rainbow = hero.concat(native,destination);
-console.log(rainbow.reverse());
+// hero = ['Ivan'];
+// native = ['York','Of'];
+// destination = ['Poltava','In'];
+// rainbow = hero.concat(native,destination);
+// console.log(rainbow.reverse());
 
-rainbow.splice(0,2,'Richard');
-rainbow.splice(3,1,'Gave','Battle','In','Vain');
-console.log(rainbow);
-
-
-colors = ['firebrick','saddlebrown','yellow','green','dodgerblue','darkslateblue','darkviolet'];
-
-for (i = 0; i < colors.length; i++) {
-        document.write(`
-        <div class="wrapper">
-        <div class = "circle" style = "background-color: ${colors[i]}"></div>
-        <div class="rainbow">${rainbow[i]}</div>
-        </div>
-   `)
-}
+// rainbow.splice(0,2,'Richard');
+// rainbow.splice(3,1,'Gave','Battle','In','Vain');
+// console.log(rainbow);
 
 
+// colors = ['firebrick','saddlebrown','yellow','green','dodgerblue','darkslateblue','darkviolet'];
+
+// for (i = 0; i < colors.length; i++) {
+//         document.write(`
+//         <div class="wrapper">
+//         <div class = "circle" style = "background-color: ${colors[i]}"></div>
+//         <div class="rainbow">${rainbow[i]}</div>
+//         </div>
+//    `)
+// }
 
 
+
+
+// let dinosaurs = [
+//     'Tiranosaur',
+//     'Velociraptor',
+//     'Mouse',
+//     'Krocodile',
+//     'Snake',
+//     'Stegozavr',
+//     'Triceraptors',
+//     'Barihozaur'
+// ]
+//
+// console.log(dinosaurs);
+//  for (let i = 0; i < dinosaurs.length; i++) {
+//      console.log('New' + dinosaurs[i]);
+//  }
+
+
+
+
+// Для элементов массивов monday и tuesday необходимо выполнить следующие методы:
+//
+//
+//
+//     Сконвертировать время потраченное на выполнение задач в часы, вместо минут.
+//     Оставить только те задачи, на выполнение которых нужно более 2-х часов.
+//     Умножить результат на часовую ставку (amount) и добавить полученное значение в качестве третъего элемента в массив.
+//     Вывести в html таблицу, которая состоит из ячеек с задачами в виде:
+//     <tr>
+// <td>Task name: Write a tutorial</td>
+// <td>Taks duration: 3 hours</td>
+// <td>Task amount: $300</td>
+// </tr>
+// Используем только методы concat/forEach/map/filter/join (по надобности, все не нужно).
+
+
+                                      //DZ_21
+
+// let amount = 100;
+//
+// let monday = [
+//     ['Write a tutorial',180],
+//     ['Some web development',120]
+// ];
+//
+// let tuesday = [
+//     ['Keep writing that tutorial',240],
+//     ['Some more web development',360],
+//     ['A whole lot of nothing',240]
+// ];
+
+
+// function newTime(monday, tuesday) {
+//      for(let i = 0; i < monday.length; i++) {
+//          monday[i][1] / 60.push[2];
+//      }
+// }
+
+ //newTime = monday.map(function () { return monday[0][1] / 60 });
+// console.log(newTime);
+
+//console.log(monday[0][1] / 60);
+
+//monday.filter(element => element.[0][1] > 2)
+
+
+
+
+// Дан масив [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
+// Знайти суму та кількість позитивних елементів.
+//     Знайти мінімальний елемент масиву та його порядковий номер.
+//     Знайти максимальний елемент масиву та його порядковий номер.
+//     Визначити кількість негативних елементів.
+//     Знайти кількість непарних позитивних елементів.
+//     Знайти кількість парних позитивних елементів.
+//     Знайти суму парних позитивних елементів.
+//     Знайти суму непарних позитивних елементів.
+//     Знайти добуток позитивних елементів.
+//     Знайти найбільший серед елементів масиву, ост альні обнулити.
+
+
+                                        //DZ_20
+
+let arr = [16,-37,54,-4,72,-56,47,4, -16,25,-37,46,4,-51,27,-63,4,-54,76,-4,12,-35,4,47]
+
+
+let positive = arr.filter(elem =>(elem > 0));
+let sumPositive = positive.reduce(function (x,y) {return x + y},0);
+let maxElem = positive.reduce(function (x,y) {return (x > y) ? x : y  });
+let negative = arr.filter(elem =>(elem < 0));
+let withOutdoublePositive = positive.filter((v, i, a) => a.indexOf(v) == i)
+.map(v => [v, positive.filter(x => x == v).length]);
+
+
+let double = positive.filter(item => x === x).length
+
+
+console.log(positive.length); //14
+console.log(sumPositive); //438
+console.log(maxElem); //76
+console.log(negative.length); //10
+console.log(positive);
+console.log(withOutdoublePositive);
+console.log(double);
